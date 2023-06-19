@@ -1,9 +1,9 @@
 #ifndef RADIO_H
 #define RADIO_H
 
-#include <iostream>
+#include "Dispositivo.h"
 
-class Radio {
+class Radio : public Dispositivo {
 private:
     int volumen;
     float canal;
@@ -11,12 +11,12 @@ private:
 
 public:
     Radio();
-    void encender();
-    void apagar();
-    void subirVolumen();
-    void bajarVolumen();
-    void sintonizar(float frecuencia);
-    void mostrarEstado();
+    void encender() override;
+    void apagar() override;
+    void subirVolumen() override;
+    void bajarVolumen() override;
+    void cambiarCanal(int numero) override;
+    void mostrarEstado() override;
 };
 
 #endif  // RADIO_H

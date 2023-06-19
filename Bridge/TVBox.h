@@ -1,10 +1,10 @@
 #ifndef TVBOX_H
 #define TVBOX_H
 
-#include <iostream>
+#include "Dispositivo.h"
 #include <string>
 
-class TVBox {
+class TVBox : public Dispositivo {
 private:
     int volumen;
     std::string servicioActual;
@@ -12,14 +12,14 @@ private:
 
 public:
     TVBox();
-    void encender();
-    void apagar();
-    void subirVolumen();
-    void bajarVolumen();
+    void encender() override;
+    void apagar() override;
+    void subirVolumen() override;
+    void bajarVolumen() override;
+    void cambiarCanal(int numero) override;
     void cambiarServicio(std::string servicio);
     void reproducirPelicula(std::string pelicula);
-    void mostrarEstado();
-    std::string getPelicula() const { return pelicula; }
+    void mostrarEstado() override;
 };
 
 #endif  // TVBOX_H

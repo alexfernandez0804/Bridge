@@ -1,4 +1,5 @@
 #include "Radio.h"
+#include <iostream>
 
 Radio::Radio() : volumen(50), canal(88.0f), estado(false) {}
 
@@ -22,8 +23,8 @@ void Radio::bajarVolumen() {
     }
 }
 
-void Radio::sintonizar(float frecuencia) {
-    canal = frecuencia;
+void Radio::cambiarCanal(int numero) {
+    // Implementa la lógica para cambiar de canal en la radio
 }
 
 void Radio::mostrarEstado() {

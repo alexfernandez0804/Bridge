@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Canal.h" />
+    <ClInclude Include="Dispositivo.h" />
     <ClInclude Include="Radio.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Servicio.h" />
@@ -136,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Canal.cpp" />
+    <ClCompile Include="Dispositivo.cpp" />
     <ClCompile Include="Radio.cpp" />
     <ClCompile Include="Servicio.cpp" />
     <ClCompile Include="TV.cpp" />

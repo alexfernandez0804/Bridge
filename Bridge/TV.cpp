@@ -1,4 +1,5 @@
 #include "TV.h"
+#include <iostream>
 
 TV::TV() : volumen(100), estado(false), marca(""), currentChannel(nullptr) {}
 
@@ -22,8 +23,8 @@ void TV::bajarVolumen() {
     }
 }
 
-void TV::cambiarCanal(Canal* canal) {
-    currentChannel = canal;
+void TV::cambiarCanal(int numero) {
+    // Implementa la lógica para cambiar de canal en la TV
 }
 
 void TV::mostrarEstado() {

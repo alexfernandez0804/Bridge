@@ -1,11 +1,11 @@
 #ifndef TV_H
 #define TV_H
 
-#include <iostream>
-#include <vector>
+#include "Dispositivo.h"
 #include "Canal.h"
+#include <vector>
 
-class TV {
+class TV : public Dispositivo {
 private:
     int volumen;
     std::vector<Canal*> canales;
@@ -15,12 +15,12 @@ private:
 
 public:
     TV();
-    void encender();
-    void apagar();
-    void subirVolumen();
-    void bajarVolumen();
-    void cambiarCanal(Canal* canal);
-    void mostrarEstado();
+    void encender() override;
+    void apagar() override;
+    void subirVolumen() override;
+    void bajarVolumen() override;
+    void cambiarCanal(int numero) override;
+    void mostrarEstado() override;
 };
 
 #endif  // TV_H

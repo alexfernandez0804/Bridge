@@ -1,4 +1,5 @@
 #include "TVBox.h"
+#include <iostream>
 
 TVBox::TVBox() : volumen(50), servicioActual(""), pelicula("") {}
 
@@ -20,6 +21,10 @@ void TVBox::bajarVolumen() {
     if (volumen > 0) {
         volumen--;
     }
+}
+
+void TVBox::cambiarCanal(int numero) {
+    // No aplica para TV Box
 }
 
 void TVBox::cambiarServicio(std::string servicio) {
